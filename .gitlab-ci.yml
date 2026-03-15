@@ -1,4 +1,4 @@
-image: python:3.11
+image: python:3.11-slim
 
 stages:
   - install
@@ -8,6 +8,7 @@ variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
 
 cache:
+  key: "$CI_COMMIT_REF_SLUG"
   paths:
     - .cache/pip
 
@@ -16,16 +17,20 @@ install-dependencies:
   script:
     - pip install --upgrade pip
     - pip install -r requirements.txt
-  artifacts:
-    paths:
-      - .cache/pip
 
 run-tests:
   stage: test
+  dependencies:
+    - install-dependencies
   script:
-    - robot --outputdir reports tests/
+    - mkdir -p reports
+    - python -m robot
+      --variable BASE_URL:$BASE_URL
+      --variable BROWSER:$BROWSER
+      --outputdir reports tests/
   artifacts:
     when: always
+    expire_in: 7 days
     paths:
       - reports/log.html
       - reports/report.html
