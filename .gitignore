@@ -1,0 +1,3 @@
+# Robot Framework output files
+reports/*
+!reports/.gitkeep
