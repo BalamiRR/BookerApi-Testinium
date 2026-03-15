@@ -25,9 +25,9 @@ run-tests:
   script:
     - mkdir -p reports
     - python -m robot
-      --variable BASE_URL:$BASE_URL
-      --variable BROWSER:$BROWSER
-      --outputdir reports tests/
+      --outputdir reports
+      --pythonpath .
+      features/
   artifacts:
     when: always
     expire_in: 7 days

@@ -10,8 +10,9 @@ class ConfigLibrary:
     def __init__(self, config_path=None):
         self.config = configparser.ConfigParser()
         if config_path is None:
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-            config_path = os.path.join(base_dir, "config.ini")
+            # Pipeline'da CI_PROJECT_DIR'dan oku, yoksa local path kullan
+            project_dir = os.environ.get("CI_PROJECT_DIR", os.getcwd())
+            config_path = os.path.join(project_dir, "libraries", "config.ini")
         self.config.read(config_path)
         logger.info(f"Config loaded from: {config_path}")
 
