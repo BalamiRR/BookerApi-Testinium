@@ -43,6 +43,30 @@ This project contains a fully automated test suite covering all endpoints of the
 | **robotframework-requests** | 0.9.7 | HTTP request library |
 | **Cucumber / Gherkin** | BDD | Scenario definition language |
 
+<p align="left"> 
+<a href="https://www.python.org/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="60" height="60"/> 
+</a> 
+
+<a href="https://robotframework.org/" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Robot-framework-logo.png" alt="Robot Framework" width="70" height="70"/> 
+</a>    
+
+<a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> 
+  <img src="https://lisacrispin.com/wp-content/uploads/2019/01/Screen-Shot-2019-01-17-at-12.13.33-PM.png" alt="oracle" width="60" height="60"/> 
+</a>
+
+<a href="https://about.gitlab.com/" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/GitLab_icon.svg" alt="GitLab" width="50" height="50"/> 
+</a>
+
+<a href="https://www.usebruno.com/" target="_blank" rel="noreferrer">
+    <img src="https://logo.svgcdn.com/devicon/bruno-original.svg" alt="Bruno" width="50" height="50"/> 
+</a>
+
+</p>
+
+
 ---
 
 ## Installation
@@ -141,6 +165,13 @@ Scenario: Get all bookings and verify the list
     Then the response status code should be 200
     And the booking list should not be empty
 ```
+#### GitLab Pipeline Result
+* Successful pipeline execution screenshot:
+* This shows that the tests were executed successfully within the GitLab pipeline and passed the sanity frontend stage.
+![alt text](./images/TestsResult_Gitlab.png)
+
+
+
 ## 📊 Test Reports
 
 After running the tests, the following reports are generated in the `results/` folder:
