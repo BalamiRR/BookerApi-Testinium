@@ -1,6 +1,6 @@
 robotframework==7.0
 robotframework-requests
 robotframework-seleniumlibrary
-robotframework-cucumberlibrary
+robotframework-pabot
 selenium
 webdriver-manager
