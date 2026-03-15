@@ -141,6 +141,13 @@ Scenario: Get all bookings and verify the list
     Then the response status code should be 200
     And the booking list should not be empty
 ```
+#### GitLab Pipeline Result
+* Successful pipeline execution screenshot:
+* This shows that the tests were executed successfully within the GitLab pipeline and passed the sanity frontend stage.
+![alt text](./images/TestsResult_Gitlab.png)
+
+
+
 ## 📊 Test Reports
 
 After running the tests, the following reports are generated in the `results/` folder:
