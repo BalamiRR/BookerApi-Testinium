@@ -1,21 +1,5 @@
 # :fallen_leaf: :leaves: Restful Booker API Test Automation :leaves: :fallen_leaf:
 
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Robot Framework](https://img.shields.io/badge/Robot%20Framework-7.0-000000?style=for-the-badge&logo=robot-framework&logoColor=white)
-![Cucumber](https://img.shields.io/badge/Cucumber-BDD-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
-![Bruno](https://img.shields.io/badge/Bruno-API%20Client-FF6C37?style=for-the-badge&logo=bruno&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-
-**Automated API test suite for Restful Booker built with Robot Framework, Python & Cucumber (BDD).**
-
-[📖 API Docs](https://restful-booker.herokuapp.com/apidoc/index.html)
-
-</div>
-
----
-
 ## About
 
 This project contains a fully automated test suite covering all endpoints of the **[Restful Booker](https://restful-booker.herokuapp.com)** API. Tests are written following the **BDD (Behavior Driven Development)** approach using Gherkin syntax, making them readable by both technical and non-technical stakeholders.
@@ -34,7 +18,7 @@ This project contains a fully automated test suite covering all endpoints of the
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
