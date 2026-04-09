@@ -1,6 +1,6 @@
 # :fallen_leaf: :leaves: Restful Booker API Test Automation :leaves: :fallen_leaf:
 
-## About
+## About 
 
 This project contains a fully automated test suite covering all endpoints of the **[Restful Booker](https://restful-booker.herokuapp.com)** API. Tests are written following the **BDD (Behavior Driven Development)** approach using Gherkin syntax, making them readable by both technical and non-technical stakeholders.
 
